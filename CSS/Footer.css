@@ -1,0 +1,44 @@
+footer{
+    width: 100vw; height: 300px;
+    display: flex;
+    position: relative;             /*config geral footer*/
+    align-items: center;
+    justify-content: center;
+    border-top: 3px dashed rgba(128, 0, 128, 0.824);
+}
+.divfooter-00{ 
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 50vw;
+    height: 200px;                          /* config info adress*/
+    color: aliceblue;
+    letter-spacing: 1.5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    }
+.divfooter-00 h4{
+        text-shadow: 1px 1px 1px purple;
+}
+
+.divfooter-01{
+    border-radius: 50%;
+    position: relative;    /*config dos icon social media*/
+    width: 30%; height: 150px;       
+}
+.divfooter-01 i{
+    margin: 15px;
+}
+
+@media (max-width:800px) {
+    .divfooter-01{
+        display: none;
+    }    
+}
+
+footer span{
+    position: absolute; 
+    color: purple;              /*direitos reservados*/
+    bottom: 0;
+}

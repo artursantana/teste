@@ -1,0 +1,80 @@
+
+
+/*todas as interções CSS-ARTICLE foram atribuidas aqui referente ao DOCUMENTO index.html!*/
+
+article{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+   margin-top: 25px;
+   position: relative;
+   
+}
+
+article div{
+    width: 250px; height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: aliceblue;
+    opacity: 0.8;
+    animation: toy 2.5s infinite;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px 0px;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.5s;
+    opacity: 0;
+    
+    
+}
+
+article div h3{
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+    font-size: 15px;
+    color: red;
+    letter-spacing: 5px;
+    
+}
+article div:hover{
+    width: 354px; height: 205px;
+    color: aliceblue;
+    background-color: tomato;
+}
+
+
+                        /*RESPOSIVIDADE*/
+
+@media (max-width:900px) {
+    article .quadro2{
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    article .quadro1{
+        display: none;
+    }
+}
+
+@keyframes toy {        /*animação dos tres artigos(DIV)*/
+    from{
+        transform: translate(0px);
+    
+    }
+    50%{
+        transform: translate(0px,5px);
+       
+    }
+    to{
+        transform:translate(0px);
+}
+}
+
+
+

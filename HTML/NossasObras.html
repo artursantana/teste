@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/css-nossasobras/nossasobras.css">
+    <link rel="stylesheet" href="../CSS/Main.css">
+    <link rel="stylesheet" href="../CSS/Article.css">
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="stylesheet" href="../CSS/Loading.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../JS/NossasObras.js"defer></script>
+    <script src="../JS/ForAll.js"defer></script>
+    <title>Nossas Obras</title>
+</head>
+<body onload="load">
+    <div id="loading-centralize">
+        <div class="Loading-ball"></div>
+    </div>
+   
+    <header id="change" class="header-scroll-max">
+
+        <nav>
+            <a href="../index.html" class="logo">BuildO</a>
+            <div class="menu-mobile" id='mbi'>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="menu-hidden">
+                <div class="menu-mobile">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list"> 
+                    <li><a class="opacity" href="../index.html">Início</a></li>
+                    <li><a class="opacity" href="../HTML/QuemSomos.html">Quem Somos</a></li>
+                    <li><a href="../HTML/NossasObras.html">Nossas Obras</a></li>
+                    <li><a class="opacity" href="../HTML/Servicos.html">Serviços</a></li>
+                    <li><a class="opacity contatos" href="#ScrollFooter">Contacto</a></li>
+                    <li class="contatos"><a href="../HTML/Formulário.html"><i class="fa-solid fa-user"></i></a></li>
+                    <div class="divMres-01">
+                        <li class="socialRes"><a href="../HTML/Formulário.html"><i class="fa-solid fa-user"></i></a></li>
+                        <li class="socialRes"><a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter" style="color: #000;"></i></a></li>
+                        <li class="socialRes"><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" style="color: #000;"></i></a></li>
+                        <li class="socialRes"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #000;"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="margin"></div>
+<div class="container-div-central">
+    
+        <div class="container-info-map">
+                <img src="https://www.movingtoportugal.pt/wp-content/uploads/2020/11/Guia_ferias_Portugal_630_420.jpg" alt="img">
+                <div id="map"></div>
+        </div>
+    
+        <div class="text-info-obras">
+        <h2>Portugal «» Espanha</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet dolor sit dolores quasi vitae impedit alias a corrupti harum. Perspiciatis optio quae tempora, expedita amet a voluptatum quibusdam dolor neque?
+        Excepturi quasi corrupti laudantium voluptas rerum repudiandae, amet fugit maxime libero dolor quo, nisi eius velit? Dolorum, quam. Id laboriosam, molestias nulla consequatur pariatur alias aut cum aliquam ab repellendus.
+        Asperiores, quod neque adipisci perferendis itaque laudantium soluta sint, tenetur, id quasi debitis quibusdam eius temporibus vel. Ut quis totam qui vel voluptatem provident, sint sed rerum odio neque quas.
+        Ullam dolore expedita ea! Aspernatur nesciunt architecto quis. Corporis est quidem praesentium molestias. Accusantium dolorum, nostrum quis nobis deleniti doloremque similique explicabo nemo eum minus tenetur reiciendis odit. Repellat, dolores.
+        Minus ipsam sequi eos praesentium facilis, labore accusantium dicta sapiente tempore quod obcaecati, earum voluptates id nisi nulla ut quaerat tenetur repudiandae modi quisquam fugit? Facere doloribus temporibus consectetur veritatis?
+        Quos porro dolorem, consectetur sunt adipisci, repellat earum officiis iusto quae voluptatum totam ipsam nemo temporibus distinctio culpa ad velit nesciunt, perferendis consequatur doloribus voluptas laborum repudiandae asperiores autem. Modi!</p>
+        </div>
+    
+    
+        <div class="container">
+            <div class="container-slide">
+                <div class="container-img">
+    
+                    <!--inputs for selction slides (display:none)-->
+                    <input class="radio-class" type="radio" name="radio" id="btn1" checked>
+                    <input class="radio-class" type="radio" name="radio" id="btn2">
+                    <input class="radio-class" type="radio" name="radio" id="btn3">
+                    <input class="radio-class" type="radio" name="radio" id="btn4">
+                    <!--inputs for selction slides (display:none)-->
+    
+                    <div class="slide-img first">
+                        <img src="../Assets/img-carousel-nossasobras/mason-2376323_640.jpg" alt="img">
+                    </div>
+                    <div class="slide-img">
+                        <img src="../Assets/img-carousel-nossasobras/mason-2376325_640.jpg" alt="img">
+                    </div>
+                    <div class="slide-img">
+                        <img src="../Assets/img-carousel-nossasobras/wooden-board-1337250_640.jpg" alt="img">
+                    </div>
+                    <div class="slide-img">
+                        <img src="../Assets/img-carousel-nossasobras/carpenter-4070631_640.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="writing">
+            <div class="writing-small small">
+                <h2>MISSÃO</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quia beatae voluptatem. Iure, dolorem, enim voluptates dolores id provident tempore cumque corporis veritatis eligendi non nisi vel ipsam. Soluta, consectetur!</p>
+            </div>
+            <div class="writing-small small">
+                <h2>MISSÃO</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quia beatae voluptatem. Iure, dolorem, enim voluptates dolores id provident tempore cumque corporis veritatis eligendi non nisi vel ipsam. Soluta, consectetur!</p>
+            </div>
+            <div class="writing-small">
+                <h2>MISSÃO</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quia beatae voluptatem. Iure, dolorem, enim voluptates dolores id provident tempore cumque corporis veritatis eligendi non nisi vel ipsam. Soluta, consectetur!</p>
+            </div>
+        </div>
+</div>
+
+    <footer id="ScrollFooter">
+        <div class="divfooter-00">
+            <h4>Porto,PT</h4>
+                ___
+             <p>Rua abril de Sá, nº20
+                    1234 – 234 Porto
+             </p>
+             <p>
+                        T. +351 123 456 300
+                        F. +351 456 123 309
+             </p>
+        </div>  
+        <span>©Build Rock 2023 - Todos os direitos reservados</span>
+                 
+        <div class='divfooter-01'>
+            <a class="rotate rotate-01" href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter fa-2xl" style="color: #ffff;"></i></a>
+            <a class="rotate rotate-02" href="https://www.facebook.com/"><i class="fa-brands fa-rotate-270 fa-square-facebook fa-2xl" style="color: #ffff;"></i></a>
+            <a class="rotate rotate-03" href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffff;"></i></a>
+            <a class="rotate rotate-04" href="../HTML/Formulário.html"><i class="fa-solid fa-rotate-90 fa-envelope fa-2xl" style="color: #ffff;"></i></a>
+            </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</body>
+</html>

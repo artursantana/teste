@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/css-formulario/formulario.css">
+    <link rel="stylesheet" href="../CSS/Main.css">
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="stylesheet" href="../CSS/Loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../JS/ForAll.js"defer></script>
+    <script src="../JS/Form.js"defer></script>
+    <title>Formulário</title>
+</head>
+<body onload="load">
+    <div id="loading-centralize">
+        <div class="Loading-ball"></div>
+    </div>
+    
+    <header id="change" class="header-scroll-max">
+
+        <nav>
+            <a href="../index.html" class="logo">BuildO</a>
+            <div class="menu-mobile" id='mbi'>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="menu-hidden">
+                <div class="menu-mobile">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list"> 
+                    <li><a class="opacity" href="../index.html">Início</a></li>
+                    <li><a class="opacity" href="../HTML/QuemSomos.html">Quem Somos</a></li>
+                    <li><a class="opacity" href="../HTML/NossasObras.html">Nossas Obras</a></li>
+                    <li><a class="opacity" href="../HTML/Servicos.html">Serviços</a></li>
+                    <li class="contatos"><a href="../HTML/Formulário.html"><i class="fa-solid fa-user"></i></a></li>
+                    <div class="divMres-01">
+                        <li class="socialRes"><a href="./HTML/Formulário.html"><i class="fa-solid fa-user"></i></a></li>
+                        <li class="socialRes"><a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter" style="color: #000;"></i></a></li>
+                        <li class="socialRes"><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" style="color: #000;"></i></a></li>
+                        <li class="socialRes"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #000;"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="margin"></div>
+
+
+<!--ultilizei um banco de dados abroad para o formualrio com este link https://www.staticforms.xyz/-->
+
+    <div class="container-form">
+        <form class="form" action="https://api.staticforms.xyz/submit" method="POST">
+
+        <input type="hidden" name="accessKey" value="9b048506-447c-49a3-95f9-5a71bf835f79">
+        <input type="hidden" name="redirectTo" value="https://artursantana.github.io/teste/">
+
+        
+            <h3>Formulário de Contato</h3>
+            <p>Você enviará um E-mail direto para Nós</p>
+       
+            <div class="inputNE">
+                <input id="name" class="field" name="name" oninput="Check()" placeholder="Nome" required>
+                <span id="msgtext"><i class="fa-solid fa-check fa-2xl" style="color: #11ff00;"></i></span>
+            </div>
+            <div class="inputNE">
+                <input id="email" class="field" name="email" oninput="Check()" placeholder="E-mail" required>
+                <span id="msgtext"><i class="fa-solid fa-check fa-2xl" style="color: #11ff00;"></i></span>
+            </div>
+            <textarea id="text" class="field" name="message" oninput="textcomplet()" placeholder="Digite sua Messagem aqui!" required></textarea>
+            <span id="msgtext"></span>
+            <input type="submit" value="Enviar">
+        </form>
+        <!--ultilizei um banco de dados abroad para o formualrio com este link https://www.staticforms.xyz/-->
+
+
+        </div>
+
+
+    </div>
+ 
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+
+/* CAROUSEL -  */
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container{
+    margin: auto;
+    display: flex;                  /*container principal*/
+    width: 700px; height: 350px;
+    margin-top: 25px; 
+    box-shadow: 1px 1px 10px 5px purple;
+}
+
+.radio-class{
+    display: none;  /*display none no elemnto de input:radio*/
+}
+
+.container-slide{
+    display: flex;
+    width: 400%; height: 350px;     
+    overflow: hidden;
+}
+
+.container-img{
+    display: flex;
+}
+
+.container-img img{
+    display: flex;
+    width:700px; height: 350px;
+}
+
+.nav-label div:not(:last-child){
+    margin-right:30px ;
+}
+.nav-label{
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.nav-label:not(:last-child){
+    margin-right:30px;
+}
+
+
+
+/*Efeito - carousel - imgs passam automaticas*/
+#btn1:checked ~ .first{
+    margin-left: 0%;
+}
+
+#btn2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#btn3:checked ~ .first{
+    margin-left: -50%;
+}
+#btn4:checked ~ .first{
+    margin-left: -75%;
+}
+/*Efeito - carousel - imgs passam automaticas*/
+
+
+
+.writing{
+    display: flex;
+    width: 100%;height: 200px;
+    margin: 70px 0px 70px 0px;
+}
+
+
+
+.writing-small{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    width: 25%; height: 150px;
+}
+
+
+.container-info-map{
+    display: flex;
+    padding: 35px;
+    width: 100%; height: 300px;
+    margin: auto;
+}
+
+#map{
+    width: 40%;
+    height: 100%;
+    box-shadow: 1px 1px 10px 5px purple;
+    z-index: -1;
+}
+.margin{
+    margin-top: 140px;
+}
+
+.text-info-obras{
+    padding: 35px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .container-info-map{
+        display: flex;
+    padding: 0px;
+    width: 100%; height: 300px;
+    margin: auto;
+     }
+     .container-info-map img{
+       left: 0;
+     }
+    #map{
+        display: none;
+    }
+
+
+
+
+    /*caixas de textos*/
+    .writing .small {
+    display: none;
+    }
+    .writing .writing-small{
+        text-align: center;
+        overflow: auto;
+        width: 80%;
+    }
+    /*caixas de textos*/
+
+
+
+
+}

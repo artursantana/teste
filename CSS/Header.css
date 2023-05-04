@@ -1,0 +1,162 @@
+
+ /*todas as interções CSS-HEADER foram atribuidas aqui referente ao DOCUMENTO index.html!*/
+
+header{
+    position: fixed;
+    width: 100%; 
+    background-color: white;
+    z-index: 1;
+    transition: all 1s;
+    
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+header a:hover{
+    opacity: 100%;
+}
+
+.opacity{
+    opacity: 0.3;  /*opacidade de <li> que estao dentro do header*/
+}
+
+.logo{
+    margin: 2px;
+    text-transform: uppercase;  /*logo da marca BUILD ROCK de dentro do header*/
+    padding: 25px;
+    position: relative;
+    
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    width: 100%;;
+    background-color: purple;
+    z-index: -1;
+ }
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    
+}
+
+.nav-list li{
+    font-size: 20px;
+    margin-left: 45px;
+}
+
+.nav-list .opacity::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+}
+
+.nav-list .opacity:hover::after{
+    width: 100%;
+    height: 2px;
+    display: block;     /*efeito de linhas abaixo dos itens/nomes do menu de cabeçalho*/
+    transition: all 0.5s;
+    background-color: purple;
+}
+
+.divMres-01 li{
+    display: none;
+  }
+
+                        /*RESPONSIVE*/
+
+  
+
+@media (max-width: 950px) {
+    body{
+        overflow-x: hidden; /*esconder menu responsivo*/
+    }
+
+    .divMres-01 li{
+    display: block;
+    }
+    .contatos{
+        display: none;
+    }
+    .menu-mobile {
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .menu-mobile:hover{
+opacity: 0.3;
+    }
+
+    .menu-mobile div{
+        background-color: purple;
+        height: 2px;
+        width: 30px;
+        margin-top: 10px;
+    }
+
+    .menu-hidden{
+       display: flex;
+       position: absolute;
+       flex-direction: column;
+       justify-content: space-around;
+       font-size: 20px;
+       top: 0;
+       align-items: center;
+       background-color: white;    /*class menu que ira aparecer com mobile*/
+       right: 0;
+       height: 100vh;
+       width: 100vw;
+       transform: translate(100%);
+       transition: all 0.2s;
+       z-index: 1;
+    }
+
+    header ul{
+        display: flex;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+}
+
+
+.active{
+    transform: translate(0%);  /*ativa ação do button mobile (responsive)*/
+}
+
+
+
+/* BAIXAR OPACIDADE QUANDO SCROLL*/
+.header-scroll-min{
+    transition: all 1s;
+    font-size: 20px;                
+    transition: all 1s;
+}
+
+.header-scroll-max{
+    
+    font-size: 60px; 
+}
+
+.animeQuadros {      /*animação scroll*/
+    opacity: 0.8;
+    transition: all 1s;
+}
+
+.divMres-01{
+  display: flex;
+  }

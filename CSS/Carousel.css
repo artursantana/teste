@@ -1,0 +1,110 @@
+
+/*todas as interções CSS-CAROUSEL foram atribuidas aqui referente ao DOCUMENTO index.html!*/
+
+section{
+    display: flex;
+    padding-top: 100px;     
+    height: 80vh;
+}
+
+.container{
+    position: relative;
+    width: 50%;                /*geral config do container onde fica scroll de imgs e textos*/
+    top: 20px;
+    padding: 15px; 
+}
+
+.container-information{
+    display:flex ;
+    justify-content: center; 
+    text-align: center;                     /*container onde tem somente textos*/
+    align-items: center;
+    letter-spacing: 3px;
+    color: aliceblue;
+}
+.gallery-wrapper{
+    overflow-x: auto;
+    overflow-y: hidden;                 /*div onde acontece o scroll do carousel*/
+    display: flex;
+    gap: 15px;
+}
+  
+.photo{
+    display: flex;
+    width: 100vw;               /*config geral das imgs do carousel*/
+    height: 450px;
+}
+
+.photo p {  
+   background-color: rgba(255, 255, 255, 0.524);
+    position: absolute;
+    bottom: 65px;           /*link de see more abaixo das imagens no carousel*/
+    left: 0;
+    color: purple;
+    padding: 30px;
+}
+.photo p:hover{
+    text-decoration: underline;
+}
+
+
+
+                    /*RESPONSIVE*/
+
+@media (max-width:1000px) {
+    .gallery div span{  
+        display: none;
+    }
+    .container-information{
+        display: none;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+}
+
+
+.left,.right{
+    position: absolute;
+    left: 0;
+    margin: 25px;
+    right: auto;
+    width: 150px;                   
+    height: 150px;
+    border: none;                       /*config geral dos botões de rolão as imgs no carousel*/
+    top: 30%;
+    border-radius: 50%;
+    transition: all 1s;
+    cursor: pointer;
+    animation-name: Arrow;
+    animation-duration: 7s;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+/*animaçºoes dos botões de rolagem*/
+@keyframes Arrow {
+    from{
+        opacity: 0;                     
+    }to{
+        opacity: 0.6;
+    }
+}
+
+.left:hover{
+    opacity: 0.8;
+}
+.right{
+    right: 0;
+    left: auto;
+}
+.right:hover{
+    opacity: 0.8;
+}
+
+.gallery-wrapper::-webkit-scrollbar{
+    display: none;              /*esconder barra de scroll do container*/
+}
