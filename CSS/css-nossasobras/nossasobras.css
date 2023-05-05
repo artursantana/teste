@@ -5,6 +5,7 @@ body{
     flex-direction: column;
     width: 100%;
     color: white;
+    overflow-x:hidden;
 }
 
 .container{
